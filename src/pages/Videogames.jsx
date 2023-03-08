@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { getVideogames } from '../api/api'
-import { Tabla } from '../components/Table'
+import { useNavigate } from 'react-router-dom';
+
+import { deleteVideoGame, getVideogames } from '../api'
+import { Tabla } from '../components'
 
 export const Videogames = () => {
 
   const [videojuegos, setVideojuegos] = useState([]);
+  const navigate = useNavigate();
 
   const campos = [
     'Id',
@@ -17,14 +20,49 @@ export const Videogames = () => {
 
   useEffect(() => {
     getVideogames()
-      .then(res => {
+      .then((res = []) => {
         setVideojuegos(res);
-      });
+      }).catch(err => {
+        console.log(err);
+        alert('Error cargando videojuegos')
+      })
   }, [])
+
+  const onDeleteVideogame = async ( game ) => {
+    const { titulo, juegoId  } = game;
+
+    const confirm = await window.confirm( `¿Seguro que deseas borrar el juego "${titulo}"?` )
+
+    if(confirm){
+      try {
+        await deleteVideoGame(juegoId);
+
+        const nuevosVideojuegos = videojuegos.filter( videojuego => videojuego.juegoId !== juegoId );
+        setVideojuegos(nuevosVideojuegos);
+
+        alert(`El juego ${ titulo } fue eliminado con exito`);
+      } catch (error) {
+        console.log(error);
+        alert('Ocurrio un error al borrar el videojuego.');
+      }
+    }
+  }
+
+  const onEditVideoGame = (videogame) => {
+    const {juegoId} = videogame;
+    navigate(`/videogames/edit/${ juegoId }`);
+  }
 
   return (
     <div className='container'>
-      <Tabla campos={campos} data={videojuegos} />
+      <Tabla 
+        campos={campos} 
+        data={videojuegos} 
+        newUrl="/videogames/new" 
+        onDeleteItem={ onDeleteVideogame } 
+        onEditItem={ onEditVideoGame }
+        />
+
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const Tabla = ({ newUrl, campos, data }) => {
+export const Tabla = ({ newUrl, campos, data, onDeleteItem, onEditItem }) => {
 
     return (
         <table className="table table-striped">
@@ -21,9 +21,9 @@ export const Tabla = ({ newUrl, campos, data }) => {
                             return <td key={index2}>{value2}</td>
                         })}
                         <td>
-                            <Link className="btn btn-primary">Editar</Link>
+                            <button className="btn btn-primary" onClick={() => onEditItem( value )} >Editar</button>
                             &nbsp;
-                            <Link className="btn btn-danger">Eliminar</Link>
+                            <button className="btn btn-danger" onClick={() => onDeleteItem( value ) }>Eliminar</button>
                         </td>
                     </tr>
                 })}

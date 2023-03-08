@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { getCellphones } from '../api/api'
-import { Tabla } from '../components/Table'
+
+import { getCellphones } from '../api'
+import { Tabla } from '../components'
 
 export const Cellphones = () => {
 
