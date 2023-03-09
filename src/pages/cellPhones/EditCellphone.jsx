@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { getCellphoneById, updateCellphone } from '../api';
+import { getCellphoneById, updateCellphone } from '../../api';
 // import { getVideoGameById, updateVideoGame } from '../api';
 
-import {  CellphoneForm } from '../components'
+import {  CellphoneForm } from '../../components'
 
 
 export const EditCellphone = () => {

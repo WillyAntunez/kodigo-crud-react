@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import { deleteVideoGame, getVideogames } from '../api'
-import { Tabla } from '../components'
+import { deleteVideoGame, getVideogames } from '../../api'
+import { Tabla } from '../../components'
 
 export const Videogames = () => {
 

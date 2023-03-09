@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import { getVideoGameById, updateVideoGame } from '../api';
-import {  VideogameForm } from '../components'
+import { getVideoGameById, updateVideoGame } from '../../api';
+import {  VideogameForm } from '../../components'
 
 
 export const EditVideoGame = () => {

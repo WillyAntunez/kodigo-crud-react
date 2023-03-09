@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import {  VideogameForm } from '../components'
-import { createVideogame } from '../api';
+import {  VideogameForm } from '../../components'
+import { createVideogame } from '../../api';
 
 export const CreateVideogame = () => {
 

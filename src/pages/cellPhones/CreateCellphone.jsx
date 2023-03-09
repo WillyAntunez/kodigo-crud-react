@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import { createCellphone } from '../api';
-import {  CellphoneForm } from '../components'
+import { createCellphone } from '../../api';
+import {  CellphoneForm } from '../../components'
 
 export const CreateCellphone = () => {
   const navigate = useNavigate();

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import { deleteCellphone, getCellphones } from '../api';
+import { deleteCellphone, getCellphones } from '../../api';
 
-import { Tabla } from '../components';
+import { Tabla } from '../../components';
 
 export const Cellphones = () => {
 
