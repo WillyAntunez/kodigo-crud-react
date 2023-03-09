@@ -13,10 +13,8 @@ export const EditVideoGame = () => {
   const params = useParams();
 
   const onSubmitForm = async ( formState ) => {
-    console.log( formState);
-
     try {
-      const res = await updateVideoGame( { juegoId: params.id, ...formState } );
+      await updateVideoGame( { juegoId: params.id, ...formState } );
       alert('Juego actualizado con exito.')
       navigate('/videogames');
     } catch (error) {
@@ -50,7 +48,7 @@ export const EditVideoGame = () => {
     }
 
     getVideoGame();
-  }, [])
+  }, [ navigate, params ])
   
 
   return(
