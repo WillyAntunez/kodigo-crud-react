@@ -7,6 +7,7 @@ export const CrudRouter = () => {
     
       <Routes>
           <Route path='/' element={ <Home /> } />
+          
           <Route path='/cellphones' element={ <Cellphones /> }  />
           <Route path='/cellphones/new' element={ <CreateCellphone /> }  />
           <Route path='/cellphones/edit/:id' element={ <EditCellphone /> }  />
