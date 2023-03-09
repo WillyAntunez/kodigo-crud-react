@@ -33,9 +33,9 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="modelo">Modelo</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="modelo" 
-                      placeholder='modelo del videojuego' 
+                      placeholder='Modelo del celular' 
                       value={ modelo }
                       name= 'modelo'
                       onChange={ onInputChange }
@@ -43,12 +43,12 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                 </div>
 
                 <div className="form-group mt-2">
-                    <label className="form-label" htmlFor="nombre">Marca</label>
+                    <label className="form-label" htmlFor="marca">Marca</label>
                     <input 
                       required
-                      className="form-control" 
-                      id="nombre" 
-                      placeholder='Nombre del videojuego' 
+                      className="form-control bg-dark text-white" 
+                      id="marca" 
+                      placeholder='Marca del celular' 
                       value={ marca }
                       name= 'marca'
                       onChange={ onInputChange }
@@ -56,12 +56,12 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                 </div>
 
                 <div className="form-group mt-2">
-                    <label className="form-label" htmlFor="nombre">Color</label>
+                    <label className="form-label" htmlFor="color">Color</label>
                     <input 
                       required
-                      className="form-control" 
-                      id="nombre" 
-                      placeholder='Nombre del videojuego' 
+                      className="form-control bg-dark text-white" 
+                      id="color" 
+                      placeholder='Color del celular' 
                       value={ color }
                       name= 'color'
                       onChange={ onInputChange }
@@ -72,9 +72,9 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="descripcion">Descripción</label>
                     <textarea 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="descripcion" 
-                      placeholder='Descripcion breve del videojuego' 
+                      placeholder='Descripcion breve del celular' 
                       value={ descripcion }
                       name= 'descripcion'
                       onChange={ onInputChange }
@@ -85,10 +85,10 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="precio">Precio (USD)</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="precio" 
                       type='number' 
-                      placeholder='Precio del videojuego' 
+                      placeholder='Precio del celular' 
                       value={ precio }
                       name= 'precio'
                       onChange={ onInputChange }
@@ -99,9 +99,9 @@ export const CellphoneForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="operadora">Operadora</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="operadora" 
-                      placeholder='operadora del videojuego' 
+                      placeholder='operadora del celular' 
                       value={ operadora }
                       name= 'operadora'
                       onChange={ onInputChange }

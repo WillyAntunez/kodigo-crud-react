@@ -55,6 +55,7 @@ export const Videogames = () => {
 
   return (
     <div className='container'>
+      <h1>Registro de videojuegos:</h1>
       <Tabla 
         campos={campos} 
         data={videojuegos} 

@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 export const Navbar = () => {
     return (
 
-        <nav className="navbar navbar-expand navbar-light bg-light">
-            <NavLink className="navbar-brand" to='/'>CrudApp</NavLink>
+        <nav className="navbar navbar-expand navbar-dark bg-dark">
+            <NavLink className="navbar-brand" to='/'>KodiStore</NavLink>
 
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">

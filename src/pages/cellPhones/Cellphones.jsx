@@ -54,6 +54,7 @@ export const Cellphones = () => {
 
  return (
     <div className='container'>
+      <h1>Registro de celulares:</h1>
       <Tabla 
         campos={campos} 
         data={cellphones} 

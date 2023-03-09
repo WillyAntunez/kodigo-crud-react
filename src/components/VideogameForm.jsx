@@ -32,7 +32,7 @@ export const VideogameForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="nombre">Nombre</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="nombre" 
                       placeholder='Nombre del videojuego' 
                       value={ titulo }
@@ -45,7 +45,7 @@ export const VideogameForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="descripcion">Descripción</label>
                     <textarea 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="descripcion" 
                       placeholder='Descripcion breve del videojuego' 
                       value={ descripcion }
@@ -58,7 +58,7 @@ export const VideogameForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="plataforma">Plataforma</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="plataforma" 
                       placeholder='Plataforma del videojuego' 
                       value={ plataforma }
@@ -71,7 +71,7 @@ export const VideogameForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="precio">Precio (USD)</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="precio" 
                       type='number' 
                       placeholder='Precio del videojuego' 
@@ -85,7 +85,7 @@ export const VideogameForm = ( { onSubmitFn = () => {}, onCancelFn = () => {}, i
                     <label className="form-label" htmlFor="categoria">Categoria</label>
                     <input 
                       required
-                      className="form-control" 
+                      className="form-control bg-dark text-white" 
                       id="categoria" 
                       placeholder='Categoria del videojuego' 
                       value={ categoria }
