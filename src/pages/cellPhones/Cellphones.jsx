@@ -55,6 +55,8 @@ export const Cellphones = () => {
  return (
     <div className='container'>
       <h1>Registro de celulares:</h1>
+      <hr />
+      <h5 className='fz-2' >Total de celulares: {cellphones.length}</h5>
       <Tabla 
         campos={campos} 
         data={cellphones} 

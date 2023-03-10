@@ -56,6 +56,8 @@ export const Videogames = () => {
   return (
     <div className='container'>
       <h1>Registro de videojuegos:</h1>
+      <hr />
+      <h5 className='fz-2' >Total de videojuegos: {videojuegos.length}</h5>
       <Tabla 
         campos={campos} 
         data={videojuegos} 
